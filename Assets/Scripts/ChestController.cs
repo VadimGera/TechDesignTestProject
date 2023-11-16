@@ -4,23 +4,18 @@ using UnityEngine;
 
 public class ChestController : MonoBehaviour
 {
-    public Animator chestAnimator; // Ссылка на компонент Animator сундука
-
-    private bool isOpen = false; // Переменная для отслеживания состояния сундука
+    public Animator animator; // Перетащите сюда компонент Animator с анимацией открытия сундука
 
     void Start()
     {
-        // Останавливаем анимацию на старте для каждого сундука
-        chestAnimator.enabled = false;
+        // Останавливаем анимацию открытия на старте
+        animator.enabled = false;
     }
 
-    void OnMouseUp()
+    void OnMouseDown()
     {
-        // При клике на сундук, меняем его состояние
-        isOpen = !isOpen;
-
-        // Включаем соответствующую анимацию в зависимости от состояния
-        chestAnimator.SetBool("isOpen", isOpen);
+        // При клике на сундук, включаем анимацию открытия
+        animator.enabled = true;
     }
 
 }
