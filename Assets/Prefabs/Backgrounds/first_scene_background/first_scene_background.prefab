@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 268531365700539691}
   - component: {fileID: 268531365700539700}
   m_Layer: 0
-  m_Name: Background
+  m_Name: first_scene_background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
